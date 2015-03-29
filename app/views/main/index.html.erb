@@ -1,1 +1,181 @@
-首頁
+<!-- <div class="slider">
+	<div style="background-image: url('/assets/fire.jpg')">
+		<div class="slider-info"></div>
+	</div>
+	<div style="background-image: url('/assets/love.jpg')">
+		<div class="slider-info"></div>
+	</div>
+</div> -->
+<div class="easyhtml5video" id="video-background">
+	<video autoplay="autoplay" poster="<%= asset_path 'hero.jpg'%>" title="" loop="loop" onended="var v=this;setTimeout(function(){v.play()},300)">
+		<source src="<%= asset_path 'hero.m4v'%>" type="video/mp4" />
+		<source src="<%= asset_path 'hero.webm'%>" type="video/webm" />
+		<object type="application/x-shockwave-flash" data="<%= asset_path 'flashfox.swf'%>" style="position:relative;">
+			<param name="movie" value="index.files/html5video/flashfox.swf" />
+			<param name="allowFullScreen" value="true" />
+			<param name="flashVars" value="autoplay=true&amp;controls=false&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=true&amp;poster=<%= asset_path 'hero.jpg'%>&amp;src=hero.m4v" />
+			 <embed src="<%= asset_path 'flashfox.swf'%>" style="position:relative;"  flashVars="autoplay=true&amp;controls=false&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=true&amp;poster=index.files/html5video/hero.jpg&amp;src=hero.m4v"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+			<img alt="hero" src="<%= asset_path 'hero.jpg'%>" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+		</object>
+	</video>
+</div>
+
+
+
+
+
+<section class="intro">
+		<h1>Renaissance重生</h1>
+		<h2>2015 TEDxNTNE 年會</h2>
+	<div class="row">
+		<p class="small-12 medium-10 large-10 small-centered columns">Ri- 重新 –nascere 出生，有重生的意味，文藝復興最重要的精神便是人文主義。<br>
+		以人為本，專注於當下的自我，期許人們有獨立思考的精神，鼓勵對習以為常的事物提出質疑與批判。</p>
+	    <a href="#" class="small-8 medium-4 large-3 small-centered columns">報名年會</a>
+	</div>
+</section>
+
+
+<section class="event-info-outter">
+	<div class="event-info-inner">
+		<div class="row">
+			<div class="small-12 medium-9 large-8 medium-centered columns info-box">
+				<h3>年會資訊</h3>
+				<p class="event-field">日期：2015/06/06</p>
+				<p class="event-field">時間：12:30 入場，13:00 開始</p>
+				<p class="event-field">地點：<a href="">國立中興大學ＯＯ廳</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 medium-9 large-8 medium-centered columns schedule-box">
+				<h3>年會議程</h3>	
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+				<div class="event-field">
+					<p class="schedule-time">09:30 ～ 10:00  開幕典禮</p>
+					<p class="schedule-person">主持人：王大明</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="speakers">
+	<h3>年會講者介紹</h3>	
+	<div class="row">
+		<div class="small-12 medium-9 large-8 medium-centered columns speaker-box">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 columns">
+					<div class="speaker-thumbnail"></div>
+				</div>
+				<div class="small-12 medium-8 large-8 columns">
+					<h4 class="speaker-name">王大牛</h4>
+					<p class="speaker-des">這是年會簡介，ri- 重新 –nascere 出生, 有重生的意味,文藝復興最重要的精神便 是人文主義,以人為本,專注於當下的自 我,期許人們有獨立思考的精神,鼓勵對習以為常的事物提出質疑與批判 。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 medium-9 large-8 medium-centered columns speaker-box">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 columns speaker-box">
+					<div class="speaker-thumbnail"></div>
+				</div>
+				<div class="small-12 medium-8 large-8 columns">
+					<h4 class="speaker-name">王大牛</h4>
+					<p class="speaker-des">這是年會簡介，ri- 重新 –nascere 出生, 有重生的意味,文藝復興最重要的精神便 是人文主義,以人為本,專注於當下的自 我,期許人們有獨立思考的精神,鼓勵對習以為常的事物提出質疑與批判 。</p>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 medium-9 large-8 medium-centered columns speaker-box">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 columns">
+					<div class="speaker-thumbnail"></div>
+				</div>
+				<div class="small-12 medium-8 large-8 columns">
+					<h4 class="speaker-name">王大牛</h4>
+					<p class="speaker-des">這是年會簡介，ri- 重新 –nascere 出生, 有重生的意味,文藝復興最重要的精神便 是人文主義,以人為本,專注於當下的自 我,期許人們有獨立思考的精神,鼓勵對習以為常的事物提出質疑與批判 。</p>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 medium-9 large-8 medium-centered columns speaker-box">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 columns">
+					<div class="speaker-thumbnail"></div>
+				</div>
+				<div class="small-12 medium-8 large-8 columns">
+					<h4 class="speaker-name">王大牛</h4>
+					<p class="speaker-des">這是年會簡介，ri- 重新 –nascere 出生, 有重生的意味,文藝復興最重要的精神便 是人文主義,以人為本,專注於當下的自 我,期許人們有獨立思考的精神,鼓勵對習以為常的事物提出質疑與批判 。</p>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 medium-9 large-8 medium-centered columns speaker-box">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 columns">
+					<div class="speaker-thumbnail"></div>
+				</div>
+				<div class="small-12 medium-8 large-8 columns">
+					<h4 class="speaker-name">王大牛</h4>
+					<p class="speaker-des">這是年會簡介，ri- 重新 –nascere 出生, 有重生的意味,文藝復興最重要的精神便 是人文主義,以人為本,專注於當下的自 我,期許人們有獨立思考的精神,鼓勵對習以為常的事物提出質疑與批判 。</p>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+<section class="image-fix">
+	<div class="image-cover"></div>
+</section>
+
+
+<section class="go-now">
+	<div class="row">
+		<h2>現在就報名2015 TEDxNCHU年會！</h2>
+		<a href="" class="small-8 medium-4 large-3 small-centered columns">報名年會</a>
+	</div>
+</section>
+
+<script>
+$(document).ready(function(){
+    $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+});
+</script>

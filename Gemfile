@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.1'
-gem 'foundation-rails'
+gem 'foundation-rails', '5.4.5'
 gem "jquery-slick-rails"
 gem 'compass-rails', '~> 2.0.0'
 gem 'uglifier', '>= 1.3.0'

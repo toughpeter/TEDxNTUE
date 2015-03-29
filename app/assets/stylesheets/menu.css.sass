@@ -1,0 +1,90 @@
+.toggle-menu-trigger, .toggle-menu
+	display: none
+@media screen and (max-width: 960px)
+	nav
+		display: none
+	header
+		border-bottom: 4px solid $theme-dark
+		padding: 16px 0
+		.logo
+			width: 40%
+			height: auto 
+			max-width: 220px
+	.toggle-menu-trigger
+		display: block
+		width: 45px
+		height: 0
+		background: transparent
+		border: 0
+		position: fixed
+		top: 8px
+		left: 8px
+		cursor: pointer
+		z-index: $z-top
+		border-bottom: 10px solid $theme
+		transition: all 500ms ease 0s
+		&:before
+			width: 45px
+			position: relative
+			left: 0
+			top: 32px
+			height: 10px
+			background: $theme
+			content: ''
+			display: block
+			transition: all 500ms ease 0s
+		&:after
+			width: 45px
+			position: relative
+			left: 0
+			top: 24px
+			height: 10px
+			background: $theme
+			content: ''
+			display: block
+			transition: all 500ms ease 0s
+		&:after
+			top: 6px
+		&:focus
+			outline: 0
+		&.on
+			border-bottom: 10px solid #ffffff
+			&:before
+				background: #ffffff
+			&:after
+				background: #ffffff
+	.toggle-menu
+		border-top: 6px solid $theme-dark
+		position: fixed
+		top: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba($theme, 0.9)
+		z-index: $z-middle
+		display: none
+		transition: all 500ms ease 0s
+		div
+			position: absolute
+			line-height: 40px
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			text-align: center
+			padding-top: 80px
+		a
+			display: block
+			color: #ffffff
+			text-decoration: none
+			line-height: 80px
+			font-size: 28px
+			position: relative
+			+transition(0.3s)
+			&:hover
+				background-color: #ffffff
+				color: $theme
+		&.on
+			display: block

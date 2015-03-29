@@ -7,7 +7,7 @@
 	</div>
 </div> -->
 <div class="easyhtml5video" id="video-background">
-	<video autoplay="autoplay" poster="<%= asset_path 'hero.jpg'%>" title="" loop="loop" onended="var v=this;setTimeout(function(){v.play()},300)">
+	<video autoplay="autoplay" title="" loop="loop" onended="var v=this;setTimeout(function(){v.play()},300)">
 		<source src="<%= asset_path 'hero.m4v'%>" type="video/mp4" />
 		<source src="<%= asset_path 'hero.webm'%>" type="video/webm" />
 		<object type="application/x-shockwave-flash" data="<%= asset_path 'flashfox.swf'%>" style="position:relative;">

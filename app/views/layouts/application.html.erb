@@ -4,20 +4,20 @@
 	<meta http-equiv="content-Type" content="text/html; charset=big5">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
-	<meta name="title" content="TEDxNCHU">
-	<meta name="KeyWords" content="TED,TEDx,TEDxNCHU,中興大學">
-	<meta name="description" content="TEDxNCHU">
+	<meta name="title" content="TEDxNTUE">
+	<meta name="KeyWords" content="TED,TEDx,TEDxNTUE,中興大學">
+	<meta name="description" content="TEDxNTUE">
 	<meta name="Author" content="Fontech Web Team">
 	<link rev="made" href="mailto:tough@fontech.com.tw">
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
-	<meta property="og:title" content="TEDxNCHU">
+	<meta property="og:title" content="TEDxNTUE">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.TEDxNCHU.tw">
-	<meta property="og:image" content="http://www.TEDxNCHU.tw/assets/public/facebook_show.jpg">
-	<meta property="og:site_name" content="TEDxNCHU">
-	<meta property="og:description" content="TEDxNCHU">
+	<meta property="og:url" content="http://www.TEDxNTUE.tw">
+	<meta property="og:image" content="http://www.TEDxNTUE.tw/assets/public/facebook_show.jpg">
+	<meta property="og:site_name" content="TEDxNTUE">
+	<meta property="og:description" content="TEDxNTUE">
 	<link rel="shortcut icon" href="http://www.fontech.com.tw/assets/public/favicon.png" type="image/png" />
 	<link rel="Bookmark" href="http://www.fontech.com.tw/assets/public/favicon.png" type="image/png" />
 	<link rel="icon" href="http://www.fontech.com.tw/assets/public/favicon.png" type="image/png" />
@@ -42,26 +42,28 @@
 		<a href="<%= contact_path %>">聯絡我們</a>
 	</div>
 </nav>
+
 <header>
-	<a href="<%= root_path %>" class="logo"><h1>TEDxNCHU</h1></a>
+	<!-- <a href="<%= root_path %>" class="logo"><h1>TEDxNTUE</h1></a> -->
+	<nav>
+		<ul class="navbar">
+			<a href="<%= root_path %>" class="logo"><h1>TEDxNTUE</h1></a>
+			<li><a href="<%= root_path %>">Renaissance重生</a></li>
+			<li><a href="<%= activity_path %>">系列活動</a></li>
+			<li><a href="<%= about_path %>">關於TEDx</a></li>
+			<li><a href="<%= team_path %>">關於我們</a></li>
+			<li><a href="#">活動專欄</a></li>
+			<li><a href="<%= contact_path %>">聯絡我們</a></li>
+		</ul>
+		<a href="https://www.facebook.com/tedxNTUE?fref=ts" class="fb-share"></a>
+	</nav>
 </header>
-<nav>
-	<ul class="navbar">
-		<a href="<%= root_path %>"><li>Renaissance重生</li></a>
-		<a href="<%= activity_path %>">系列活動</a>
-		<a href="<%= about_path %>"><li>關於TEDx</li></a>
-		<a href="<%= team_path %>"><li>關於我們</li></a>
-		<a href="#"><li>活動專欄</li></a>
-		<a href="<%= contact_path %>"><li>聯絡我們</li></a>
-	</ul>
-	<a href="https://www.facebook.com/tedxnchu?fref=ts" class="fb-share"></a>
-</nav>
 <%= yield %>
 <footer>
 	<div class="row">
 		<p class="small-12 medium-8 large-8 columns">This independent TEDx event is operated under license from TED.</p>
 		<div class="small-12 medium-4 large-4 columns">
-			<div class="logo"><h1>TEDxNCHU</h1></div>
+			<div class="logo"><h1>TEDxNTUE</h1></div>
 		</div>
 	</div>
 </footer>

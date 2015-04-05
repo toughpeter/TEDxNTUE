@@ -4,9 +4,9 @@ $theme-light: lighten($theme, 20%)
 $theme-dark: darken($theme, 10%)
 
 
-$helper: #24ba55
-$helper-light: #24ba55
-$helper-dark: #006b5e
+$helper: #F3E0DE
+$helper-light: lighten($helper, 20%)
+$helper-dark: darken($helper, 10%)
 
 
 
@@ -16,14 +16,14 @@ $danger: #E74C3B
 $font-light: rgba(255, 255, 255, 0.9)
 $font-light-hover: rgba(255, 255, 255, 1)
 $font-light-helper: rgba(255, 255, 255, 0.7)
-$font-dark: rgba(52, 73, 94, 1)
+$font-dark: #281E1E
 
 
 $fog: rgba(10, 10, 10, 0.4)
 $fog-light: rgba(10, 10, 10, 0.2)
 
 
-$all-background: rgba(236, 240, 241, 1)
+$all-background: #f7f7f7
 
 
 
@@ -53,7 +53,11 @@ $side-padding: 8px
 	width: 100%
 	padding-bottom: $elastic-image-height
 
-
+@mixin background-box($size, $repeat, $position-x, $position-y)
+	background-color: $helper
+	background-size: $size
+	background-repeat: $repeat
+	background-position: $position-x $position-y
 // font management
 $primary-style: "AvenirNext-Regular", "Roboto", "HelveticaNeue-Light", "Helvetica", "Arial", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif
 $secondary-style: Georgia, Cambria, 'Times New Roman', Times, LiSong Pro, "新細明體", serif

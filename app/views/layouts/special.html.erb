@@ -45,10 +45,10 @@
 
 <header>
 	<!-- <a href="<%= root_path %>" class="logo"><h1>TEDxNTUE</h1></a> -->
-	<nav class="normal-nav">
+	<nav class="index-nav">
 		<a href="<%= root_path %>" class="logo"><h1>TEDxNTUE</h1></a>
 		<ul class="navbar">
-			<li><a href="<%= root_path %>">2015年會</a></li>
+			<li><a href="<%= root_path %>">Renaissance重生</a></li>
 			<li><a href="<%= activity_path %>">系列活動</a></li>
 			<li><a href="<%= about_path %>">關於TEDx</a></li>
 			<li><a href="<%= team_path %>">關於我們</a></li>
@@ -83,7 +83,7 @@
   
 })(jQuery);
 $(document).scroll(function(){
-   var scrollNavbar = 88 ;
+   var scrollNavbar = 80 ;
    var height = $(document).scrollTop();
    if (height >= scrollNavbar) {
        $("nav").addClass("scrollNav");

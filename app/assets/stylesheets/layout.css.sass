@@ -2,14 +2,22 @@ body
 	width: 100%
 	height: auto
 	margin: 0 auto
+	position: relative
 header
 	position: relative
 	z-index: $z-top
 	text-align: right
+.index-nav
+	width: 100%
+	margin: 0 auto
+	padding: 16px 20px 0 20px
+	position: absolute
+	&:after
+		content: ''
+		display: block
+		clear: both
 	.navbar
-		width: 100%
-		max-width: 1280px
-		margin: 16px auto 0 auto
+		float: right
 		li
 			+inline-block
 			margin-left: 32px
@@ -17,34 +25,96 @@ header
 			a
 				display: inline
 				font-size: 20px
-		.logo
-			width: 280px
-			height: 70px
-			display: block
-			float: left
-			// background-color: #FFF
-			background-image: image-url('tedxntue-logo.png')
-			background-size: contain
-			background-position: center center
-			background-repeat: no-repeat
-			overflow: hidden
-			h1
-				margin-left: 9999px
-#video-background, video
-	width: 100%
-	position: absolute
-	top: -32px
-	left: 0
-	z-index: $z-bottom
-	background-image: image-url('hero.jpg')
-	background-size: cover
+				&:hover
+					color: $theme
+					border-bottom: 2px solid $theme
+					text-shadow: 0 0 5px rgba(255, 255, 255, 0.3)
+.logo
+	width: 200px
+	height: 50px
+	display: block
+	float: left
+	// background-color: #FFF
+	background-image: image-url('logos/tedxntue-white.png')
+	background-size: contain
 	background-position: center center
-.intro
-	padding-top: 53%
-	h1, h2, p
-		text-align: center
+	background-repeat: no-repeat
+	overflow: hidden
 	h1
-		color: $theme
+		margin-left: 9999px
+.normal-nav
+	background-color: $theme
+	text-align: left
+	padding: 0 20px
+	font-size: 0
+	.logo
+		height: 70px
+		display: block
+		float: none
+		margin: 0 auto
+		width: 15%
+		background-color: $theme-dark
+		border-left: 12px solid $theme-dark
+		border-right: 12px solid $theme-dark
+		background-image: image-url('logos/tedxntue-all-white.png')
+		+inline-block
+	.navbar
+		float: none
+		+inline-block
+		width: 85%
+		max-width: 1280px
+		margin: 0 auto
+		text-align: left
+		li
+			+inline-block
+			margin-left: 0
+			width: 16.6%
+			line-height: 40px
+			padding-top: 0
+			text-align: center
+			a
+				display: block
+				font-size: 18px
+				line-height: 70px
+				&:hover
+					background-color: #FFF
+					color: $theme
+.scrollNav
+	width: 100%
+	background-color: rgba(30, 0, 0, 0.9)
+	position: fixed
+	padding: 0 20px
+	top: 0
+	margin: 0 auto
+	background-color: $theme
+	+transition(0.8s)
+	+box-shadow(0 1px 5px $fog)
+	.logo
+		display: none
+	.navbar
+		float: none
+		max-width: 1280px
+		margin: 0 auto
+		text-align: center
+		width: 100%
+		li
+			+inline-block
+			margin-left: 0
+			width: 16%
+			padding-top: 0
+			text-align: center
+			a
+				display: block
+				font-size: 18px
+				line-height: 48px
+				&:hover
+					background-color: $theme-dark
+					border-bottom: 0
+					color: #ffffff
+
+.normal-nav.scrollNav
+	background-color: $theme
+
 // 	text-align: center
 // 	background-color: red
 // 	a
@@ -102,3 +172,23 @@ header
 // 	p
 // 		text-align: center
 // 		font-size: 16px
+footer
+	padding-top: 48px
+	padding-bottom: 16px
+	border-top: 4px solid $theme
+	background-color: #ffffff
+
+	p
+		color: $theme
+		font-size: 14px
+		display: block
+		margin-bottom: 40px
+	.logo
+		background-image: image-url('logos/tedxntue-black.png')
+		background-position: center center
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		overflow: hidden
+		h1
+			margin-left: 9999px

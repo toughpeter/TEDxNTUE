@@ -1,0 +1,194 @@
+#video-background
+	width: 100%
+	padding-bottom: 55%
+	top: 0
+	left: 0
+	background-image: image-url('hero.jpg')
+	background-size: cover
+	background-position: center center
+	position: relative
+video
+	width: 100%
+	position: absolute
+	top: -16px
+	left: 0
+.video-cover
+	display: block
+	position: absolute
+	background-color: rgba(35, 20, 20, 0.4)
+	padding-bottom: 55%
+	height: 30px
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+#image-hero
+	display: none
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: left center
+	background-image: image-url('image-hero.jpg')
+	height: 480px
+.intro
+	padding-top: 72px
+	padding-bottom: 72px
+@media screen and (max-width: 960px)
+	#video-background, video
+		display: none
+	#image-hero
+		display: block
+	.intro
+		padding-top: 64px
+		padding-bottom: 64px
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+	#video-background, video
+		display: none
+	#image-hero
+		display: block
+	.intro
+		padding-top: 64px
+		padding-bottom: 64px
+
+
+
+
+
+
+
+
+.intro
+	h1, h2, p
+		text-align: center
+	h1
+		color: $theme
+.event-info-outter
+	background-color: $helper
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+	background-image: image-url('event-outter.jpg')
+	.info-box, .schedule-box
+		+border-radius(5px)
+		padding: 12px 0 0 0
+		+box-shadow(0 0 3px rgba(180, 180, 180, 0.5))
+		h3
+			// border-bottom: 4px solid #ffffff
+			padding: 0 8px 8px 8px
+			font-size: 22px
+			width: 100%
+			margin: 0 0
+			text-align: center
+	.info-box
+		background-color: $all-background
+		margin-top: 40px
+		border: 8px solid #fff
+	.event-field
+		position: relative
+		padding: 8px 16px
+		width: 100%
+		display: table
+		a
+			color: $font-dark
+		&:nth-child(2n)
+			background-color: #ffffff
+	.schedule-box
+		background-color: $all-background
+		margin-top: 32px
+		margin-bottom: 32px
+		border: 8px solid #fff
+		.event-field
+			padding: 12px 16px
+			&:nth-child(2n)
+				background-color: #ffffff
+			&:hover
+				background-color: $theme
+				color: #ffffff
+	.schedule-time
+		display: table-cell
+		width: 65%
+		// border: 1px solid red
+	.schedule-person
+		display: table-cell
+		width: 35%
+		text-align: right
+		// position: absolute
+		// right: 16px
+		// top: 0
+
+.speakers
+	background-color: #fafafa
+	padding-top: 48px
+	// background-image: image-url('body-pattern.png')
+	h2
+		line-height: 120px
+		font-size: 28px
+		text-align: center
+		+border-radius(50%)
+		background-color: $theme
+		width: 160px
+		height: 160px
+		line-height: 160px
+		margin-bottom: 32px
+		color: #ffffff
+		margin: 0 auto 48px auto
+		border: 2px solid #ffffff
+	.speaker-box
+		&:hover
+			.speaker-thumbnail
+				+transform(scale(1.02))
+				+box-shadow(0 0 3px rgba(120, 120, 120, 0.5))
+				+transition(0.2s)
+	.row
+		// margin-bottom: 32px
+	.speaker-thumbnail
+		padding-bottom: 100%
+		background-color: $all-background
+		margin-bottom: 80px
+	.speaker-name
+		font-size: 22px
+	.speaker-des
+		font-size: 16px	
+		margin-bottom: 48px
+.image-fix
+	background-image: image-url('rain.jpg')
+	background-position: top center
+	background-attachment: fixed
+.image-cover
+	position: relative
+	padding-bottom: 25%
+	background: -moz-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%),-moz-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), rgba(0,0,0,0.1)
+	background: -webkit-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), -webkit-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), rgba(0,0,0,0.1)
+	background-position: 0 0, 40px 40px
+	-webkit-background-size: 8px 8px
+	-moz-background-size: 8px 8px
+	background-size: 8px 8px
+
+	&:after
+		content: ''
+		display: block
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba($theme, 0.3)
+		position: absolute
+.go-now
+	// background-color: #ededed
+	padding: 80px 0
+	h2, a
+		text-align: center
+		display: block
+	h2
+		margin: 80px auto 32px auto
+	a
+		margin: 0 auto 80px auto
+		border: 2px solid $theme
+		background-color: #FFF
+		line-height: 48px
+		+border-radius(3px)
+		font-size: 20px
+		color: $theme
+		&:hover
+			background-color: $theme
+			color: #ffffff

@@ -1,4 +1,5 @@
 class MainController < ApplicationController
+	layout "special", :only => :index
 	def index
 
 	end

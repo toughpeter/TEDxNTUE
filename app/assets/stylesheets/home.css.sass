@@ -1,9 +1,9 @@
 #video-background
 	width: 100%
-	padding-bottom: 55%
+	padding-bottom: 52%
 	top: 0
 	left: 0
-	background-image: image-url('hero.jpg')
+	background-image: image-url('banner.jpg')
 	background-size: cover
 	background-position: center center
 	position: relative
@@ -24,11 +24,12 @@ video
 	bottom: 0
 #image-hero
 	display: none
-	background-size: cover
+	background-size: contain
 	background-repeat: no-repeat
-	background-position: left center
-	background-image: image-url('image-hero.jpg')
-	height: 480px
+	background-position: center center
+	background-image: image-url('banner.jpg')
+	// height: 480px
+	padding-bottom: 37%
 .intro
 	padding-top: 72px
 	padding-bottom: 72px
@@ -167,19 +168,27 @@ video
 		font-size: 16px	
 		margin-bottom: 48px
 .image-fix
-	background-image: image-url('image-hero.jpg')
+	background-image: image-url('banner.jpg')
 	background-position: top center
 	background-size: cover
 	background-attachment: fixed
+	@media screen and (max-width: 64em)
+		background-attachment: inherit
+
 .image-cover
 	position: relative
-	padding-bottom: 25%
 	background: -moz-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%),-moz-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), rgba(0,0,0,0.1)
 	background: -webkit-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), -webkit-radial-gradient(rgba(0,0,0, 0.1) 15%, transparent 16%), rgba(0,0,0,0.1)
 	background-position: 0 0, 40px 40px
 	-webkit-background-size: 8px 8px
 	-moz-background-size: 8px 8px
 	background-size: 8px 8px
+	@media screen and (min-width: 64em)
+		padding-bottom: 30%
+	@media screen and (max-width: 64em)
+		padding-bottom: 40%
+	@media screen and (max-width: 40.063em)
+		padding-bottom: 100%
 
 	&:after
 		content: ''

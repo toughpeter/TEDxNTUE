@@ -15,5 +15,8 @@
 <script>
 $(function() {
   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+  $('.contact').css("height", function(){ 
+    return $('body').height() - 142;
+	});
 });
 </script>

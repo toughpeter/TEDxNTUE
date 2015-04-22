@@ -29,6 +29,7 @@ header
 					color: $theme
 					border-bottom: 2px solid $theme
 					text-shadow: 0 0 5px rgba(255, 255, 255, 0.3)
+
 .logo
 	width: 200px
 	height: 50px
@@ -79,6 +80,11 @@ header
 				&:hover
 					background-color: #FFF
 					color: $theme
+					+transition(0.3s)
+		.active
+			background-color: #FFF
+			color: $theme
+
 .scrollNav
 	width: 100%
 	background-color: rgba(30, 0, 0, 0.9)
@@ -114,64 +120,6 @@ header
 
 .normal-nav.scrollNav
 	background-color: $theme
-
-// 	text-align: center
-// 	background-color: red
-// 	a
-// 		+inline-block
-// 		float: right
-// 		width: 20%
-// 		padding: 16px 32px
-// 		font-size: 18px
-// 		&:hover
-// 			background-color: $theme-light
-// 	.active
-// 		border-bottom: 1px solid $theme-light
-
-
-
-// .company-name
-// 	text-align: center
-// .slogan
-// 	text-align: center
-// 	margin: 72px auto
-// 	// font-size: big-font
-// .lang
-// 	text-align: right
-// 	margin: 0 8px 12px 0
-// .main
-// 	padding: 20px 0 32px 0
-// .article-box
-// 	padding: 16px 8px
-// 	margin-bottom: 20px
-// 	display: block
-// 	&:hover
-// 		background-color: $theme-light
-// 		+transition(0.3s)
-// .article-lists
-// 	padding-left: 8px
-// .article-list
-// 	display: inline
-
-// .slider
-// 	background-color: $theme
-// footer
-// 	padding-top: 16px
-// 	padding-bottom: 16px
-// 	background-color: $theme-light
-// 	color: $theme
-// 	input
-// 		height: 32px
-// 		width: 100%
-// 		border: 1px solid $theme
-// 		+border-radius(3px)
-// 		padding: 0 12px
-// 		font-size: 14px
-// 	.footer-name
-// 		font-size: 16px
-// 	p
-// 		text-align: center
-// 		font-size: 16px
 footer
 	padding-top: 48px
 	padding-bottom: 16px

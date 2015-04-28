@@ -109,7 +109,9 @@ video
 	.schedule-time
 		display: table-cell
 		width: 65%
-		// border: 1px solid red
+		span
+			font-size: 105%
+			margin-left: 16px
 		@media screen and (max-width: 40.063em)
 			width: 100%
 			display: block
@@ -117,7 +119,9 @@ video
 	.schedule-person
 		display: table-cell
 		width: 35%
+		font-size: 90%
 		text-align: right
+		+opacity(0.8)
 		@media screen and (max-width: 40.063em)
 			width: 100%
 			display: block

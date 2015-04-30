@@ -62,8 +62,20 @@ video
 		text-align: center
 	h1
 		color: $theme
-
-
+	.row
+		a
+			display: block
+			margin: 80px auto 64px auto
+			text-align: center
+			border: 2px solid $theme
+			background-color: #FFF
+			line-height: 48px
+			+border-radius(3px)
+			font-size: 20px
+			color: $theme
+			&:hover
+				background-color: $theme
+				color: #ffffff
 .event-info-outter
 	background-color: $helper
 	background-size: cover
@@ -110,11 +122,11 @@ video
 				color: #ffffff
 	.schedule-time
 		display: table-cell
-		width: 65%
+		width: 25%
 		span
 			font-size: 105%
 			margin-left: 16px
-		@media screen and (max-width: 40.063em)
+		@media screen and (max-width: 64em)
 			width: 100%
 			display: block
 			text-align: center
@@ -124,7 +136,7 @@ video
 		font-size: 90%
 		text-align: right
 		+opacity(0.8)
-		@media screen and (max-width: 40.063em)
+		@media screen and (max-width: 64em)
 			width: 100%
 			display: block
 			text-align: center

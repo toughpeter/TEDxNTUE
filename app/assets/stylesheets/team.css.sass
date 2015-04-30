@@ -35,7 +35,19 @@
 			border: 1px solid white
 			padding: 0
 			&:hover
-				background-color: $theme
+				position: relative
+				&:after
+					content: ''
+					display: block
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+					background-color: rgba($theme, 0.7)
+					position: absolute
+			&:last-child
+				background-color: rgba(255, 255, 255, 0.7)
+
 		.team-head
 			padding-bottom: 100%
 			background-size: cover
@@ -59,6 +71,10 @@
 
 
 	.partner-logo
-		margin-top: 8px
+		margin-top: 32px
+		width: 90%
+		&:last-child
+			margin-bottom: 24px
+
 
 	

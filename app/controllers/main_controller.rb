@@ -16,5 +16,8 @@ class MainController < ApplicationController
 	def contact
 
 	end
+	def registration
+
+	end
 
 end

@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'team' => 'main#team'
   get 'partner' => 'main#partner'
   get 'contact' => 'main#contact'
+  get 'registration' => 'main#registration'
 end
